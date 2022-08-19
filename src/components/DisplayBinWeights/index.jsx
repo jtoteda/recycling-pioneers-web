@@ -26,7 +26,7 @@ const BinWeightsComponent = (props) => {
   //Bin data from Firebase Real time database
   const fbfunc = async (props) => {
     // Using the MAC address of the bin in Trottier 1050
-    const fbData = props.firebase.latestDataRef("3C-61-05-13-06-B8");
+    const fbData = props.firebase.latestDataRef("3C:61:05:13:06:B8");
     fbData.on("value", (snapshot) => {
       let data = {};
       data["Compost"] =
